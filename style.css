@@ -1,15 +1,16 @@
 html, body {
-  
-  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   margin: 0px;
   padding: 0px;
+
    font-family: 'Open Sans', sans-serif;
-    background-color: #0093E9;
-background: linear-gradient(to top left, #0093E9 0%, #80D0C7 100%) fixed;
 }
 
 body {
-
+  background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(170, 221, 235, 1) 100%);
 }
 
 .name {
@@ -18,17 +19,17 @@ body {
 }
 
 .wrapper {
-  margin: auto;
-  position:relative;
-  top:150px;
+  
+  
   max-width: 55%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   height: 50%;
 }
 
 .left, .right {
+ 
+  
   margin: 5px;
   max-width: 55%;
   flex: 1;
@@ -46,20 +47,16 @@ body {
   list-style: none;
   padding-left: 0px;
   font-size: 18px;
-
 }
 
 .social-links li {
   display: inline-block;
   margin-right: 8px;
-  color: white;
-background-color: black;
 }
 
 .social-links a {
   text-decoration: none;
   padding: 4px;
-  color: white;
 }
 
 .social-links a:hover {
@@ -68,20 +65,4 @@ background-color: black;
 
 .profile-picture{
 	border-radius: 50%;
-}
-.project{
-  font-family: 'Roboto Mono', monospace;
-  position: relative;
-  top:150px;
- margin: auto;
-align-items: center;
-}
-.projectname{
-  font-size: 45px;
-}
-.projecttitle{
-  font-size: 30px;
-}
-.projectsubtitle{
-  font-size: 20px;
 }
