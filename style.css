@@ -1,11 +1,9 @@
 html, body {
-  text-align: center;
   min-height: 100%;
-  margin: 0px;
-  padding: 0px;
-   font-family: 'Open Sans', sans-serif;
-    background-color: #0093E9;
-background: linear-gradient(to top left, #0093E9 0%, #80D0C7 100%) fixed;
+  margin: auto;
+ background-color: #FCFCFC;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 body {
@@ -18,14 +16,28 @@ body {
 }
 
 .wrapper {
-  margin: auto;
+  
   position:relative;
-  top:150px;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
   max-width: 55%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 50%;
+  height: 100%;
+ 
+}
+
+.projectwrapper {
+  
+  display: flex;
+   flex-direction: row;
+    position:relative;
+}
+
+.info{
+  top:150px;
 }
 
 .left, .right {
@@ -53,7 +65,7 @@ body {
   display: inline-block;
   margin-right: 8px;
   color: white;
-background-color: black;
+  background-color: black;
 }
 
 .social-links a {
@@ -67,15 +79,41 @@ background-color: black;
 }
 
 .profile-picture{
-	border-radius: 50%;
+  border-radius: 50%;
 }
+
 .project{
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', monospace;
   position: relative;
-  top:150px;
- margin: auto;
-align-items: center;
+ background-color: #CFCECA;
+ padding: 50px;
+ padding-top: 25px;
 }
+
+.singleProject{
+  margin-bottom: 50px;
+  border: 5px solid black;
+ padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+}
+
+.outerInfo{
+  color: #FFFFFF;
+  text-align: center;
+   background-color: #253D58;
+   width: 40%;
+}
+.info{
+ color: #FFFFFF;
+border-left-style: solid;
+border-right-style: solid;
+border-radius: 10px;
+margin: 25px;
+padding: 25px;
+}
+
 .projectname{
   font-size: 45px;
 }
@@ -84,4 +122,21 @@ align-items: center;
 }
 .projectsubtitle{
   font-size: 20px;
+}
+.projectPicture{
+  display: flex;
+  justify-content: center;
+}
+.infosection{
+  padding-bottom: 25px;
+}
+.workEntry{
+  margin-bottom: 50px;
+}
+
+.header1{
+  font-size: 20px;
+}
+.header2{
+  font-size: 15px;
 }
