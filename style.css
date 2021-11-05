@@ -88,6 +88,7 @@ body {
  background-color: #CFCECA;
  padding: 50px;
  padding-top: 25px;
+ max-width: 65%;
 }
 
 .singleProject{
@@ -101,6 +102,7 @@ body {
 
 .outerInfo{
   color: #FFFFFF;
+  padding-top: 30px;
   text-align: center;
    background-color: #253D58;
    width: 40%;
@@ -121,7 +123,7 @@ padding: 25px;
   font-size: 30px;
 }
 .projectsubtitle{
-  font-size: 20px;
+  font-size: 18px;
 }
 .projectPicture{
   display: flex;
@@ -138,5 +140,10 @@ padding: 25px;
   font-size: 20px;
 }
 .header2{
-  font-size: 15px;
+  font-size: 15px; 
+}
+
+.bulletpoints{
+  text-align: left; 
+  color: #CFCECF;
 }
