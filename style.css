@@ -1,49 +1,110 @@
-html, body {
-  min-height: 100%;
-  margin: auto;
- background-color: #CFCECA;
-  font-family: 'Open Sans', sans-serif;
-  
+html {
+  scroll-behavior: smooth;
 }
 
+html,
+body {
+  margin: auto;
+  background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigationBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigationBar > ul {
+  display: flex;
+  margin: 20px;
+}
+
+.navigationBar ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 12px 25px 12px 25px;
+}
+
+#portfolio {
+  color: white;
+}
+#portfolio > a {
+  color: white;
+  background-color: #00165a;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+#name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #2d3142;
+}
 
 .name {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 2px;
 }
 
+.startpage {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .wrapper {
   border-radius: 25px;
-  position:relative;
-  margin: auto;
-  margin-top: 10rem;
-  margin-bottom: 200px;
-  max-width: 55%;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 100%;
-  background-color: #253D58;
-  color: #FFFFFF;
-  padding: 1rem;
 
+  color: #000000;
+}
+
+#scroll-down {
+  position: absolute;
+  bottom: 10px;
+}
+#scroll-down > img {
+  height: 50px;
 }
 
 .projectAndInfo {
-  
   display: flex;
-   flex-direction: row;
-    position:relative;
+  flex-direction: row;
+  position: relative;
 }
 
-.info{
-  top:150px;
+.info {
+  top: 150px;
 }
 
-.left, .right {
+.left,
+.right {
   margin: 5px;
-  max-width: 55%;
   flex: 1;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,100 +115,98 @@ html, body {
   justify-content: center;
 }
 
-.social-links {
-  list-style: none;
-  padding-left: 0px;
-  font-size: 18px;
-
-}
-
-.social-links li {
-  display: inline-block;
-  margin-right: 8px;
-  color: white;
-  background-color: black;
-}
-
-.social-links a {
-  text-decoration: none;
-  padding: 4px;
-  color: white;
-}
-
-.social-links a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.profile-picture{
+.profile-picture {
   border-radius: 50%;
+  width: 250px;
+  height: auto;
+}
+.introHeader {
+  font-size: 50px;
 }
 
-.project{
-  font-family: 'Roboto', monospace;
+#project {
+  font-family: "Roboto", monospace;
   position: relative;
- background-color: #CFCECA;
- padding: 50px;
- padding-top: 25px;
- max-width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  padding-top: 25px;
+  max-width: 80%;
+  gap: 20px;
 }
 
-.singleProject{
-  margin-bottom: 50px;
-  background-color: #253D58;
-  border: 5px solid black;
- padding-bottom: 25px;
+.singleProject {
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  max-width: 500px;
+  height: 600px;
+  margin: auto;
+  background-color: #253d5b;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #aaaaaa;
+
+  padding-bottom: 25px;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 25px;
-   color: #EAE0DE;
+  color: #eae0de;
 }
 
-.outerInfo{
-  color: #FFFFFF;
+.outerInfo {
+  color: #ffffff;
   padding-top: 30px;
   text-align: center;
-   background-color: #253D58;
-   width: 40%;
+  background-color: #253d58;
+  width: 40%;
 }
 
-.info{
- color: #FFFFFF;
+.info {
+  color: #ffffff;
 
-border-left-style: solid;
-border-right-style: solid;
-border-radius: 10px;
-margin: 25px;
-padding: 25px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 25px;
 }
 
-.projectname{
+.projectname {
   font-size: 45px;
 }
-.projecttitle{
+.projecttitle {
   font-size: 30px;
 }
-.projectsubtitle{
+.projectsubtitle {
   font-size: 18px;
 }
-.projectPicture{
+.projectPicture {
   display: flex;
   justify-content: center;
+  flex: 1 0 auto;
+  margin-top: auto;
 }
-.infosection{
+
+.projectPicture > a > img {
+  max-width: 100%;
+  width: auto;
+}
+.infosection {
   padding-bottom: 25px;
 }
-.workEntry{
+.workEntry {
   margin-bottom: 50px;
 }
 
-.header1{
+.header1 {
   font-size: 20px;
 }
-.header2{
-  font-size: 15px; 
+.header2 {
+  font-size: 15px;
 }
 
-.bulletpoints{
-  text-align: left; 
-  color: #CFCECF;
+.bulletpoints {
+  text-align: left;
+  color: #cfcecf;
 }
