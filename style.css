@@ -1,12 +1,12 @@
 html {
   scroll-behavior: smooth;
+  font-family: "Titillium Web", sans-serif;
 }
 
 html,
 body {
   margin: auto;
   background-color: #fafafa;
-  font-family: "Roboto", sans-serif;
 }
 .container {
   display: flex;
@@ -14,10 +14,10 @@ body {
   align-items: center;
 }
 .navigationBar {
-  position: fixed;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -38,7 +38,7 @@ body {
 }
 #portfolio > a {
   color: white;
-  background-color: #00165a;
+  background-color: #0b2036;
   border-radius: 10px;
   padding: 10px 20px 10px 20px;
 }
@@ -73,38 +73,16 @@ a {
 }
 .wrapper {
   border-radius: 25px;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100%;
-
-  color: #000000;
-}
-
-#scroll-down {
-  position: absolute;
-  bottom: 10px;
-}
-#scroll-down > img {
-  height: 50px;
-}
-
-.projectAndInfo {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.info {
-  top: 150px;
 }
 
 .left,
 .right {
   margin: 5px;
   flex: 1;
-  width: 300px;
+  width: 325px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,89 +102,155 @@ a {
   font-size: 50px;
 }
 
-#project {
-  font-family: "Roboto", monospace;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
-  padding-top: 25px;
-  max-width: 80%;
-  gap: 20px;
+#scroll-down {
+  position: absolute;
+  bottom: 10px;
 }
 
-.singleProject {
-  flex: 1 0 auto;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 500px;
-  max-width: 500px;
-  height: 600px;
-  margin: auto;
-  background-color: #253d5b;
-  overflow: hidden;
-  box-shadow: 5px 5px 5px #aaaaaa;
+#scroll-down > img {
+  height: 50px;
+}
 
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 25px;
-  color: #eae0de;
+#about-container {
+  background-color: #0b2036;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 0px 280px 0px;
+}
+
+#about-section {
+  width: 50%;
+  font-size: 20px;
 }
 
 .outerInfo {
   color: #ffffff;
   padding-top: 30px;
   text-align: center;
-  background-color: #253d58;
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info {
-  color: #ffffff;
+  color: #000000;
+  background-color: #fafafa;
+  display: flex;
 
-  border-left-style: solid;
-  border-right-style: solid;
-  border-radius: 10px;
-  margin: 25px;
-  padding: 25px;
+  width: 90%;
+  border-radius: 15px;
+  margin: -150px 0px 0px 0px;
 }
 
-.projectname {
-  font-size: 45px;
+.info-section {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100px;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  padding: 70px 25px 25px 25px;
 }
-.projecttitle {
+
+#education-section {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#experience-section {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.info-section-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: #e89c31;
+}
+#education-icon {
+  width: 50px;
+}
+
+#work-icon {
+  width: 50px;
+}
+
+#experience-icon {
+  width: 75px;
+}
+
+.info-header {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+.info-subsection-header {
+  font-size: 20px;
+  color: #8c0e0f;
+}
+
+.info-text {
+  font-size: 18px;
+  line-height: 1.7em;
+}
+#project-section-header {
+  margin: 100px;
+  margin-bottom: 0px;
+}
+
+#project-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+
+  max-width: 90%;
+  gap: 10px;
+}
+
+.single-project {
+  width: 30%;
+  max-width: 30%;
+  height: 250px;
+  flex: 1 0 auto;
+  margin: auto;
+  background-color: #253d5b;
+
+  border-radius: 15px;
+  color: #eae0de;
+}
+
+.project-header {
+  height: 20%;
+}
+
+.project-title {
   font-size: 30px;
+  margin: 0;
 }
-.projectsubtitle {
+.project-subtitle {
   font-size: 18px;
 }
-.projectPicture {
+.project-picture {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
+  height: 80%;
+}
+
+.project-picture > a {
   margin-top: auto;
+  height: 100%;
 }
 
-.projectPicture > a > img {
-  max-width: 100%;
-  width: auto;
-}
-.infosection {
-  padding-bottom: 25px;
-}
-.workEntry {
-  margin-bottom: 50px;
-}
-
-.header1 {
-  font-size: 20px;
-}
-.header2 {
-  font-size: 15px;
-}
-
-.bulletpoints {
-  text-align: left;
-  color: #cfcecf;
+.project-picture > a > img {
+  width: 100%;
+  height: auto;
 }

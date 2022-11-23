@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&family=Titillium+Web&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -39,201 +39,141 @@
             <p class="introHeader">Hi, I'm Cesar!</p>
           </div>
         </div>
-        <a id="scroll-down" href="#project"
+        <a id="scroll-down" href="#about-container"
           ><img src="img/caret-down.png" alt="scroll down button"
         /></a>
       </div>
 
       <div class="outerInfo">
-        <h2>About Me:</h2>
-        <div class="info">
-          <div class="infosection">
-            <h3>Education</h3>
-            <p class="header1">
-              Vassar College, Poughkeepsie <br />
-              <span class="header2"
-                >B.A. Computer Science and Psychology<br />
-                GPA: 3.64</span
-              >
+        <div id="about-container">
+          <div id="about-section">
+            <h2>About Me</h2>
+            <p>
+              I am a front end developer hoping to create projects that help and
+              entertain. I have always been an avid puzzle solver and good
+              problem solver, so programming has always been the perfect avenue.
             </p>
           </div>
+        </div>
+        <div class="info">
+          <div class="info-section" id="education-section">
+            <div class="info-section-image">
+              <img id="education-icon" src="./img/book.svg" alt="icon" />
+            </div>
+            <h3 class="info-header">Education</h3>
+            <div class="info-subsection">
+              <p class="info-subsection-header">Vassar College</p>
+              <p class="info-text">
+                Poughkeepsie, New York<br />
+                B.A. Computer Science and Psychology<br />
+                GPA: 3.64
+              </p>
+            </div>
+            <div class="info-subsection">
+              <p class="info-subsection-header">Relevant Coursework:</p>
+              <ul class="info-text">
+                <li>Data Structures</li>
+                <li>Analysis of Algorithms</li>
+                <li>Operating Systems</li>
+                <li>Graphics</li>
+                <li>Compilers</li>
+              </ul>
+            </div>
+          </div>
 
-          <div class="infosection">
-            <h3>Work Experience</h3>
+          <div class="info-section" id="work-section">
+            <div class="info-section-image">
+              <img
+                id="work-icon"
+                src="./img/briefcase.svg"
+                alt="icon for about me section"
+              />
+            </div>
+            <h3 class="info-header">Work Experience</h3>
             <div class="workEntry">
-              <p class="header1">
-                Computer Science Research Assistant<br />
-                <span class="header2"
-                  >Vassar College, Poughkeepsie, NY<br />
-                  September 2021 - Present</span
-                >
+              <p class="info-subsection-header">
+                Computer Science Research Assistant
               </p>
-              <ul class="bulletpoints">
-                <li>
-                  Collaborating with professor in developing new parallel
-                  programming library for the Go language
-                </li>
-                <li>
-                  Research and apply methods of higher-order functions and
-                  thread channel communication to transfer features of the Occam
-                  programming language to Go
-                </li>
-              </ul>
+              <p class="info-text">
+                Vassar College, Poughkeepsie, NY<br />
+                September 2021 - June 2022
+              </p>
             </div>
             <div class="workEntry">
-              <p class="header1">
-                Computer Science Coaching Assistant<br />
-                <span class="header2"
-                  >Vassar College, Poughkeepsie, NY<br />
-                  February 2021 - June 2021</span
-                >
+              <p class="info-subsection-header">
+                Computer Science Coaching Assistant
               </p>
-              <ul class="bulletpoints">
-                <li>
-                  Assisted professor during labs by addressing students'
-                  questions on assignments
-                </li>
-                <li>
-                  Conducted office hours to assist students in one-on-one
-                  sessions, guiding them through issues in abstraction and
-                  problem solving
-                </li>
-              </ul>
+              <p class="info-text">
+                Vassar College, Poughkeepsie, NY<br />
+                February 2021 - June 2021
+              </p>
             </div>
-            <div class="workEntry">
-              <p class="header1">
-                Seasonal Delivery Driver/ Sales Associate <br />
-                <span class="header2"
-                  >Pizza Hut, Oceanside, CA <br />
-                  March 2018 - August 2021
-                </span>
-              </p>
-              <ul class="bulletpoints">
-                <li>
-                  Excelled in service across the entire restaurant pipeline,
-                  including cooking, servicing customer requests, and keeping
-                  delivery times low all in a fast-paced environment
-                </li>
-                <li>
-                  Taught new trainees and assisted other stores in improving
-                  efficiency during peak hours
-                </li>
-              </ul>
+          </div>
+          <div class="info-section" id="experience-section">
+            <div class="info-section-image">
+              <img
+                id="experience-icon"
+                src="./img/stack.png"
+                alt="icon for about me section"
+              />
             </div>
-            <div class="workEntry">
-              <p class="header1">
-                Facility Monitor/ Game Assistant <br />
-                <span class="header2"
-                  >Vassar College, Poughkeepsie, NY <br />
-                  September 2018 - February 2021</span
-                >
-              </p>
-              <ul class="bulletpoints">
-                <li>
-                  Provided service to visitors to the athletic center at Vassar
-                  College, and cleaned the facilities
-                </li>
-                <li>
-                  Assisted coaches in sporting events by setting up, and
-                  resolving problems mid-game
-                </li>
+            <h3 class="info-header">Tech and Frameworks</h3>
+            <div class="info-subsection">
+              <p class="info-subsection-header">Experience working in:</p>
+              <p class="info-text">Git, Unity</p>
+            </div>
+            <div class="info-subsection">
+              <p class="info-subsection-header">Programming languages:</p>
+              <ul class="info-text">
+                <li>Java</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      <h1>Projects I've made</h1>
-      <div id="project">
-        <div class="singleProject">
-          <p class="projecttitle">MathBattle</p>
+      <h1 id="project-section-header">Projects I've made</h1>
+      <div id="project-section">
+        <div class="single-project">
+          <div class="project-header">
+            <p class="project-title">MathBattle</p>
+          </div>
 
-          <ul class="projectsubtitle">
-            <li>
-              Educational tower defense game designed to teach basic arithmetic
-            </li>
-            <li>Hand-drawn colorful artstyle and whimsical music.</li>
-            <li>Built using Javascript and the p5.js library.</li>
-          </ul>
-          <p class="projectsubtitle">
-            If you click the image you can play it!
-            <strong>Volume Warning!</strong>
-          </p>
-          <div class="projectPicture">
+          <div class="project-picture">
             <a href="https://cesarcamacho.me/MathBattle/"
               ><img src="img/mathbattle.png" alt="mathbattle screenshot"
             /></a>
           </div>
         </div>
 
-        <div class="singleProject">
-          <p class="projecttitle">Gravity Combat</p>
+        <div class="single-project">
+          <p class="project-title">Gravity Combat</p>
 
-          <ul class="projectsubtitle">
-            <li>
-              Asteroids-like space shooter game with engaging physics-based
-              movement system and unique generated art for spaceships
-            </li>
-            <li>
-              Wrote script to offset space background sprite based on movement
-              to improve immersion
-            </li>
-            <li>Built using Unity and C#</li>
-          </ul>
-          <p class="projectsubtitle">If you click the image you can play it!</p>
-          <div class="projectPicture">
+          <div class="project-picture">
             <a href="https://play.unity.com/mg/other/webgl-builds-200645"
               ><img src="img/gravitycombat.png" alt="Gravity Combat Screenshot"
             /></a>
           </div>
         </div>
 
-        <div class="singleProject">
-          <p class="projecttitle">Endless Runner</p>
+        <div class="single-project">
+          <p class="project-title">Endless Runner</p>
 
-          <ul class="projectsubtitle">
-            <li>Endless runner game with Unity and C#</li>
-            <li>
-              Developed system of scripts that automatically spawns randomized
-              platforms and destroys assets as player gets too far.
-            </li>
-            <li>
-              Utilized 3D assets and music to create bleak dystopian sci-fi
-              style
-            </li>
-          </ul>
-          <p class="projectsubtitle">
-            If you click the image you can play it!
-            <strong>Volume Warning!</strong>
-          </p>
-          <div class="projectPicture">
+          <div class="project-picture">
             <a href="https://play.unity.com/mg/other/webgl-builds-173872"
               ><img src="img/endlessRunner.png" alt="Endless Runner Screenshot"
             /></a>
           </div>
         </div>
 
-        <div class="singleProject">
-          <p class="projecttitle">Pathfinder</p>
+        <div class="single-project">
+          <p class="project-title">Pathfinder</p>
 
-          <ul class="projectsubtitle">
-            <li>
-              Visualizes pathfinding algorithms such as Dijkstra's and A* to
-              better understand their behavior.
-            </li>
-            <li>
-              Utilized and developed skills in combining data structures (2D
-              Array, Stack, PriorityQueue) in implementing pathfinding
-              algorithms
-            </li>
-            <li>
-              Implemented responsive wall placement and customizable grid size
-              to allow user experimentation.
-            </li>
-            <li>Developed using Java and the Swing GUI toolkit.</li>
-          </ul>
-
-          <div class="projectPicture">
+          <div class="project-picture">
             <a href="https://github.com/Xysar/Pathfinder"
               ><img
                 src="img/pathfinder.png"
@@ -243,23 +183,10 @@
           </div>
         </div>
 
-        <div class="singleProject">
-          <p class="projecttitle">Whiteboard</p>
-          <ul class="projectsubtitle">
-            <li>
-              Simple Whiteboard app to help in remote learning, developed in 24
-              hour span with two other teammates.
-            </li>
-            <li>
-              Gained experience in leading a team, through teaching my teammates
-              how to use git, a new IDE, and how to contribute effectively.
-            </li>
-            <li>Developed using Java and the Swing GUI toolkit.</li>
-            <li>
-              Entry for Vassar College's 1st ever hack-a-thon. 2nd Place Winner!
-            </li>
-          </ul>
-          <div class="projectPicture">
+        <div class="single-project">
+          <p class="project-title">Whiteboard</p>
+
+          <div class="project-picture">
             <a href="https://github.com/Xysar/VassarHacks"
               ><img
                 src="img/whiteboard.jpg"
