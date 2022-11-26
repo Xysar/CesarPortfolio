@@ -200,34 +200,36 @@ a {
   line-height: 1.7em;
 }
 #project-section-header {
-  margin: 100px;
-  margin-bottom: 0px;
+}
+#project-section {
+  margin: 100px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#project-section {
+.projects {
   position: relative;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 50px;
 
   max-width: 90%;
-  gap: 10px;
+  gap: 20px;
 }
 
 .single-project {
-  width: 30%;
-  max-width: 30%;
-  height: 250px;
-  flex: 1 0 auto;
-  margin: auto;
-  background-color: #253d5b;
-
+  width: 430px;
+  height: 300px;
+  background-color: #0b2036;
+  z-index: 1;
   border-radius: 15px;
   color: #eae0de;
 }
 
 .project-header {
-  height: 20%;
+  height: 15%;
 }
 
 .project-title {
@@ -239,6 +241,7 @@ a {
 }
 .project-picture {
   overflow: hidden;
+
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
@@ -246,11 +249,26 @@ a {
 }
 
 .project-picture > a {
-  margin-top: auto;
-  height: 100%;
+  width: 100%;
 }
 
 .project-picture > a > img {
   width: 100%;
-  height: auto;
+  height: 300px;
+}
+
+.contact-section {
+  background-color: #0b2036;
+  color: white;
+  width: 100%;
+  height: 15em;
+
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  font-size: 40px;
 }
