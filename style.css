@@ -229,7 +229,26 @@ a {
 }
 
 .project-header {
-  height: 15%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project-icons {
+  display: flex;
+  align-items: center;
+}
+
+.project-icon {
+  width: 30px;
+  height: 30px;
+}
+.unity-logo {
+  width: 40px;
+  height: 40px;
 }
 
 .project-title {
@@ -245,7 +264,7 @@ a {
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
-  height: 80%;
+  height: 75%;
 }
 
 .project-picture > a {
